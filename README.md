@@ -11,19 +11,21 @@ Con este algoritmo podremos validar que una Figura este realmente en su lugar.
 
 Look, a list!
 
- * Figura
  * FiguraManejadora
 
 
 Ejemplo de Codigo! :+1:
 
 ```cs
-if (xDinamico >= xEstatico - RANGO && xDinamico <= xEstatico + RANGO &&
-               yDinamico  >= yEstatico - RANGO && yDinamico <= yEstatico + RANGO)
-            {
-                figuraDinamica.TranslateX = xEstatico;
-                figuraDinamica.TranslateY = yEstatico;
-            }
+        /// <summary>
+        /// Añade una figura para poder ser referenciada.
+        /// </summary>
+        /// <param name="name">Nombre del objeto dinamico que se va mover</param>
+        /// <param name="transform">Transform del objeto estatico con el cual se va a comparar</param>
+        public void Add(String name, CompositeTransform transform)
+        {
+            pilaFigura.Add(name, transform);
+        }
 ```
 
 Este algoritmo complementa el [Repositorio]() de [josemarb96](https://github.com/josemarb96).
