@@ -42,7 +42,6 @@ namespace Mover_Figuras_Canvas
         public void Img_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
         {
 
-            //TODO poner BONICO
             ((CompositeTransform)((Image)sender).RenderTransform).TranslateX += e.Delta.Translation.X;
             ((CompositeTransform)((Image)sender).RenderTransform).TranslateY += e.Delta.Translation.Y;
         }
