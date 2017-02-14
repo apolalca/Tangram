@@ -99,7 +99,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Figura.cs" />
-    <Compile Include="Model\FiguraManajer.cs" />
+    <Compile Include="VistaModelo\FiguraManajer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Windows\UI\Xaml\Brush.cs" />
   </ItemGroup>
