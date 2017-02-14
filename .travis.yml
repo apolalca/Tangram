@@ -1,0 +1,4 @@
+language: csharp
+solution: solution-name.sln
+script:    # the following commands are just examples, use whatever your build process requires
+  - ./Mover_Figuras_Canvas/Mover_Figuras_Canvas/VistaModelo/FiguraManajer.cs
