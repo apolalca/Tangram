@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="c5d424b1-b667-4026-ad97-10ea8de1d402"
-    Publisher="CN=apol"
+    Name="56e1bf60-5fa8-4d4b-b439-906e38e84720"
+    Publisher="CN=jmramirez"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="c5d424b1-b667-4026-ad97-10ea8de1d402" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="56e1bf60-5fa8-4d4b-b439-906e38e84720" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>ProyectoTangan</DisplayName>
-    <PublisherDisplayName>apol</PublisherDisplayName>
+    <DisplayName>Mover_Figuras_Canvas</DisplayName>
+    <PublisherDisplayName>jmramirez</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="ProyectoTangan.App">
+      EntryPoint="Mover_Figuras_Canvas.App">
       <uap:VisualElements
-        DisplayName="ProyectoTangan"
+        DisplayName="Mover_Figuras_Canvas"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="ProyectoTangan"
+        Description="Mover_Figuras_Canvas"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

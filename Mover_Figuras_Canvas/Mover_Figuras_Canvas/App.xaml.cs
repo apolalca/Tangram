@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace ProyectoTangan
+namespace Mover_Figuras_Canvas
 {
     /// <summary>
     /// Proporciona un comportamiento específico de la aplicación para complementar la clase Application predeterminada.
@@ -40,10 +40,10 @@ namespace ProyectoTangan
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
-            if (System.Diagnostics.Debugger.IsAttached)
+           /* if (System.Diagnostics.Debugger.IsAttached)
             {
                 this.DebugSettings.EnableFrameRateCounter = true;
-            }
+            }*/
 #endif
             Frame rootFrame = Window.Current.Content as Frame;
 
