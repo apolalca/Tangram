@@ -1,5 +1,5 @@
 language: csharp
-solution: ./Mover_Figuras_Canvas/Mover_Figuras_Canvas.sln.sln
+solution: ./Mover_Figuras_Canvas/Mover_Figuras_Canvas.sln
 script:    # the following commands are just examples, use whatever your build process requires
   - ./build.sh
   - ./test.sh
