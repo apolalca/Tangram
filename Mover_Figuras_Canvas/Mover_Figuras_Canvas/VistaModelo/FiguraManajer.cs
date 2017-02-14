@@ -10,19 +10,34 @@ namespace Mover_Figuras_Canvas.Model
 {
     public class FiguraManajer
     {
+        //Diccionario en el cual se guardará la referencia entre un objeto y otro.
         private Dictionary<String, CompositeTransform> pilaFigura;
+        //Rango maximo permitido
         private const int RANGO = 10;
 
+        /// <summary>
+        /// Inicializa la manejadora de Figuras
+        /// </summary>
         public FiguraManajer()
         {
             pilaFigura = new Dictionary<string, CompositeTransform>();
         }
 
+        /// <summary>
+        /// Añade una figura para poder ser referenciada.
+        /// </summary>
+        /// <param name="name">Nombre del objeto dinamico que se va mover</param>
+        /// <param name="transform">Transform del objeto estatico con el cual se va a comparar</param>
         public void Add(String name, CompositeTransform transform)
         {
             pilaFigura.Add(name, transform);
         }
 
+        /// <summary>
+        /// Comprueba si la figura esta encima de la real, si es así la fugura se ajustara a la figura estatica (la que nunca movemos y
+        /// usaremos para comprobar si la figura esta bien posicionada.
+        /// </summary>
+        /// <param name="figura">Imagen de la figura</param>
         public void checkFiguras(Image figura)
         {
             CompositeTransform figuraDinamica = (CompositeTransform) figura.RenderTransform;
